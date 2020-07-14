@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4": {
+            "LiYi\\": "qrcode/"
+        }
+    },
+    "require": {
+        "simplesoftwareio/simple-qrcode": "^3.0",
+        "endroid/qr-code": "^3.8"
+    }
+}

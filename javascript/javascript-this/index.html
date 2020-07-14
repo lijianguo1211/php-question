@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+
+<script>
+    // function fn () {
+    //     this.num = 10;
+    //     console.log(this);
+    //     console.log(this.num);
+    // }
+    //
+    // let obj = new fn();//this指向的就是new的fn这个对象
+    //
+    // obj.num = 20;
+    //
+    // console.log(obj);
+
+    // function fn () {
+    //     this.num = 10;
+    //     return '';
+    // }
+    // let obj = new fn();
+    // console.log(obj.num);//10
+
+    // function fn () {
+    //     this.num = 10;
+    //     return null;
+    // }
+    // let obj = new fn();
+    // console.log(obj.num);//10
+    //
+    // function fn () {
+    //     this.num = 10;
+    //     return 1;
+    // }
+    // let obj = new fn();
+    // console.log(obj.num);//10
+    //
+    // function fn () {
+    //     this.num = 10;
+    //     return [];
+    // }
+    // let obj = new fn();
+    // console.log(obj.num);//undefined
+
+
+    // function fn () {
+    //     this.num = 10;
+    //     return {};
+    // }
+    // let obj = new fn();
+    // console.log(obj.num);//undefined
+
+    // function fn () {
+    //     this.num = 10;
+    //     return function () {
+    //
+    //     };
+    // }
+    // let obj = new fn();
+    // console.log(obj.num);//undefined
+
+    function fn () {
+        this.num = 10;
+        return null;
+    }
+    let obj = new fn();
+    console.log(obj.num);//10
+
+</script>
+</html>
