@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <h4>{{ name }}</h4>
+
+    <h5>{{ title }}</h5>
+
+    <ul>
+        <li v-for="(good, index) in goods">
+            <span>{{ index }}  </span><span>{{ good.text}}</span> | <span>{{ good.price }}</span>
+            <button @click="addCart(index)">添加购物车</button>
+        </li>
+    </ul>
+
+    <table border="1">
+        <tr>
+            <td>商品</td>
+            <td>单价</td>
+            <td>价格</td>
+            <td>总量</td>
+            <td>操作</td>
+        </tr>
+
+        <tr v-for="c in cart">
+            <td>{{ c.text }}</td>
+            <td>{{ c.price }}</td>
+            <td>{{ c.price * c.count }}</td>
+            <td>{{ c.count }}</td>
+        </tr>
+
+    </table>
+</div>
+</body>
+<script src="./../../node_modules/vue/dist/vue.js"></script>
+
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data: {
+            name: "Jay",
+            title: "PHP",
+            goods:[
+                {text: 'php', price: 100},
+                {text: 'java', price: 80},
+                {text: 'nginx', price: 10}
+            ],
+            cart:[],
+        },
+        methods: {
+          addCart(i) {
+              console.log('添加购物车');
+              let item = this.goods[i];
+              console.log(item);
+              let good = this.cart.find(v=>v.text == item.text);
+
+              if (good) {
+                good.count += 1
+              } else {
+                  this.cart.push({...item, count:1});
+              }
+          }
+        },
+        created: function () {//实例被创建之后执行代码
+            console.log('name is:' + this.name);
+        }
+    });
+
+
+</script>
+
+</html>

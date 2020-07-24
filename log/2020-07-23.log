@@ -1,0 +1,56 @@
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php on line 21
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP Stack trace:
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   1. {main}() F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:0
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   2. SimpleSoftwareIO\QrCode\Generator->generate($text = 'http://www.lglg.xyz', $filename = './phone.png') F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:97
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   3. SimpleSoftwareIO\QrCode\Image->__construct($image = 'LIYI') F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Generator.php:174
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   4. imagecreatefromstring('LIYI') F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php:21
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php on line 41
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP Stack trace:
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   1. {main}() F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:0
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   2. SimpleSoftwareIO\QrCode\Generator->generate($text = 'http://www.lglg.xyz', $filename = './phone.png') F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:97
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   3. SimpleSoftwareIO\QrCode\ImageMerge->merge($percentage = 0.2) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Generator.php:175
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   4. SimpleSoftwareIO\QrCode\ImageMerge->setProperties($percentage = 0.2) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php:99
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   5. SimpleSoftwareIO\QrCode\Image->getHeight() F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php:144
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   6. imagesy(FALSE) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php:41
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php on line 31
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP Stack trace:
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   1. {main}() F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:0
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   2. SimpleSoftwareIO\QrCode\Generator->generate($text = 'http://www.lglg.xyz', $filename = './phone.png') F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:97
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   3. SimpleSoftwareIO\QrCode\ImageMerge->merge($percentage = 0.2) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Generator.php:175
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   4. SimpleSoftwareIO\QrCode\ImageMerge->setProperties($percentage = 0.2) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php:99
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   5. SimpleSoftwareIO\QrCode\Image->getWidth() F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php:145
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   6. imagesx(FALSE) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php:31
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, bool given in F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php on line 111
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP Stack trace:
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   1. {main}() F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:0
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   2. SimpleSoftwareIO\QrCode\Generator->generate($text = 'http://www.lglg.xyz', $filename = './phone.png') F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:97
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   3. SimpleSoftwareIO\QrCode\ImageMerge->merge($percentage = 0.2) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Generator.php:175
+[23-Jul-2020 14:29:19 Asia/Shanghai] PHP   4. imagecopyresampled(resource(66) of type (gd), FALSE, 80, 80, 0, 0, 40, 40, NULL, NULL) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php:111
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php on line 21
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP Stack trace:
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   1. {main}() F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:0
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   2. SimpleSoftwareIO\QrCode\Generator->generate($text = 'http://www.lglg.xyz', $filename = './phone.png') F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:97
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   3. SimpleSoftwareIO\QrCode\Image->__construct($image = 'LIYI') F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Generator.php:174
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   4. imagecreatefromstring('LIYI') F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php:21
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP Warning:  imagesy() expects parameter 1 to be resource, bool given in F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php on line 41
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP Stack trace:
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   1. {main}() F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:0
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   2. SimpleSoftwareIO\QrCode\Generator->generate($text = 'http://www.lglg.xyz', $filename = './phone.png') F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:97
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   3. SimpleSoftwareIO\QrCode\ImageMerge->merge($percentage = 0.2) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Generator.php:175
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   4. SimpleSoftwareIO\QrCode\ImageMerge->setProperties($percentage = 0.2) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php:99
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   5. SimpleSoftwareIO\QrCode\Image->getHeight() F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php:144
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   6. imagesy(FALSE) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php:41
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP Warning:  imagesx() expects parameter 1 to be resource, bool given in F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php on line 31
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP Stack trace:
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   1. {main}() F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:0
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   2. SimpleSoftwareIO\QrCode\Generator->generate($text = 'http://www.lglg.xyz', $filename = './phone.png') F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:97
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   3. SimpleSoftwareIO\QrCode\ImageMerge->merge($percentage = 0.2) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Generator.php:175
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   4. SimpleSoftwareIO\QrCode\ImageMerge->setProperties($percentage = 0.2) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php:99
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   5. SimpleSoftwareIO\QrCode\Image->getWidth() F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php:145
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   6. imagesx(FALSE) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Image.php:31
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, bool given in F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php on line 111
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP Stack trace:
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   1. {main}() F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:0
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   2. SimpleSoftwareIO\QrCode\Generator->generate($text = 'http://www.lglg.xyz', $filename = './phone.png') F:\LiYi-GitHub\php-question\error\try-catch\http-request\index.php:97
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   3. SimpleSoftwareIO\QrCode\ImageMerge->merge($percentage = 0.2) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\Generator.php:175
+[23-Jul-2020 14:31:50 Asia/Shanghai] PHP   4. imagecopyresampled(resource(64) of type (gd), FALSE, 80, 80, 0, 0, 40, 40, NULL, NULL) F:\LiYi-GitHub\php-question\vendor\simplesoftwareio\simple-qrcode\src\ImageMerge.php:111
