@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            left: 0;
+            position: relative;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+
+<script>
+    let box1 = document.querySelector('.box1');
+
+    box1.onclick = move;
+
+    function move()
+    {
+        console.log(this);
+        //this.style.left = '50px';
+    }
+
+    //move();
+    //console.log(this);
+
+
+    var obj = {
+        a:10,
+        b: {
+            fn: function () {
+                console.log(this);
+                console.log(this.c);
+            },
+            c: 20
+        },
+        fn: function () {
+            console.log(this);
+            console.log(this.a);
+            console.log(this.b);
+        }
+    };
+
+    //obj.b.fn();
+    //obj.fn();
+
+    function fn () {
+        this.num = 10;
+        console.log(this);
+    }
+
+    var obj = new fn();
+</script>
+</html>
